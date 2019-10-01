@@ -13,8 +13,7 @@ if ($admin['tipo_usuario'] == 'administrador') {
     $title="Administrador";
     $nombre = $admin['usuario'];
     require 'res/views/header.view.php';
-    require 'res/views/socios.view.php';
-    require 'res/views/modal.socio.php';
+    require 'res/views/fichaje.view.php';
     require 'res/views/footer.view.php';
 }else if ($admin['tipo_usuario'] == 'usuario') {
     $title = "Usuario";
@@ -25,8 +24,7 @@ if ($admin['tipo_usuario'] == 'administrador') {
         padre = imagen.parentNode;
         padre.removeChild(imagen);
 </script>';
-    require 'res/views/socios.view.php';
-    require 'res/views/modal.socio.php';
+    require 'res/views/fichaje.view.php';
     require 'res/views/footer.view.php';
 }
 

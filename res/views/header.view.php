@@ -6,7 +6,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <title><?php echo $title ?></title>
-
+ 
+ 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="res/plugins/fontawesome-free/css/all.min.css">
   <!-- overlayScrollbars -->
@@ -15,6 +16,8 @@
   <link rel="stylesheet" href="res/dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/w/bs4-4.1.1/jq-3.3.1/dt-1.10.18/datatables.min.css"/>
+
 </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">

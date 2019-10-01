@@ -6,6 +6,7 @@
   </footer>
 </div>
 <!-- ./wrapper -->
+<script type="text/javascript" src="https://cdn.datatables.net/w/bs4-4.1.1/jq-3.3.1/dt-1.10.18/datatables.min.js"></script>
 
 <!-- REQUIRED SCRIPTS -->
 <!-- jQuery -->
@@ -28,7 +29,6 @@
 <script src="res/plugins/jquery-mapael/maps/world_countries.min.js"></script>
 <!-- ChartJS -->
 <script src="res/plugins/chart.js/Chart.min.js"></script>
-
 <!-- PAGE SCRIPTS -->
 <script src="res/dist/js/pages/dashboard2.js"></script>
 </body>
