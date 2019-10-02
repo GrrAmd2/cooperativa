@@ -1,5 +1,6 @@
 <?php 
-require "res/admin/conexion.php";
+require "conexion.php";
+require "config.php";
 
  if(isset($_POST['area']) && isset($_POST['referente'])){
     $area=$_POST['area'];
@@ -10,7 +11,7 @@ require "res/admin/conexion.php";
         $registrar = mysqli_query($conexion, $sql);
         if($registrar){
             echo "cargado correctamente";
-            header("location: area.php");
+            header('location:'.RUTA. 'area.php');
         }else{
             echo mysqli_error($conexion);
         }

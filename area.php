@@ -1,6 +1,7 @@
 <?php session_start();
 require "res/admin/config.php";
 require "functions.php";
+require "res/admin/conexion.php";
 //comprobar session
 if (!isset($_SESSION['usuario'])){
     header('Location: '.RUTA.'login.php');

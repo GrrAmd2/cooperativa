@@ -11,6 +11,7 @@ while($data = mysqli_fetch_assoc($mostrar)){
     <td>".$data['id_area']."</td>
     <td>".$data['nombre']."</td>
     <td>".$data['referente']."</td>
+
     </tr>";
 }
 

@@ -7,7 +7,7 @@
   Añadir un socio
 </button>
 <div class="table-responsive">
-  <table class="table">
+  <table class="table table-sm table-ligh">
     <thead>
         <tr>
             <th>Nombre y apellido</th>
@@ -40,10 +40,9 @@
         <td>".$data['telefono1']."</td>
         <td>".$data['telefono2']."</td>
         <td>".$data['email']."</td>
-        <td>".$data['fecha_nacimiento']."</td>
         <td>".$data['fundador']."</td>
         <form method='post' action='res/admin/eliminar_socio.php?id=".$data['id_socio']."'>
-        <td><button type='submit' class='btn btn-danger'>Eliminar</button></form></td>
+        <td><button type='submit' class='btn btn-danger'><i class='fas fa-trash-alt'></i></button></form></td>
         </tr>";
     }
     ?>

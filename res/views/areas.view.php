@@ -14,17 +14,27 @@
               </div>
             </div>
             <div class="card-body">
-                <form action="registrar_area.php" method="post">
+                <form action="res/admin/registrar_area.php" method="post">
               <div class="form-group">
                 <label for="inputName">Nombre del area</label>
                 <input type="text" id="inputName" name="area" class="form-control">
               </div>
               <div class="form-group">
                 <label for="inputStatus">Referente</label>
-                <input type="text" id="inputName" name="referente" class="form-control">
-               <!-- <select class="form-control custom-select" name="referente">
+
+<select class="form-control custom-select" name="referente">
+
                   <option selected disabled>Seleccionar uno</option>
-                </select>-->
+                  <?php 
+          require "res/admin/conexion.php";
+                $sql2 = "SELECT * FROM socios WHERE referente = 'Si'";
+                $resultadoReferente = mysqli_query($conexion, $sql2);
+                while($rows=mysqli_fetch_array($resultadoReferente)){
+                  echo "<option value='".$rows[1]." ".$rows[2]."'>".$rows[1]." ".$rows[2]."</option>";
+
+                  }
+                  ?>
+                </select>
               </div>
               
             </div>
@@ -48,10 +58,10 @@
               </div>
             </div>
             <div class="card-body">
-              <form action="eliminar_area.php" method="post">
+              <form action="res/admin/eliminar_area.php" method="post">
               <div class="form-group">
                 <label for="inputStatus">Area</label>
-                <select class="form-control custom-select" name="id_area">
+                <select class="form-control custom-select" name="id_area" required>
                   <option selected disabled>Seleccionar uno</option>
                   <?php 
                   require "res/admin/conexion.php";

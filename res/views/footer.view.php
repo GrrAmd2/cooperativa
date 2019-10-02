@@ -6,8 +6,7 @@
   </footer>
 </div>
 <!-- ./wrapper -->
-<script type="text/javascript" src="https://cdn.datatables.net/w/bs4-4.1.1/jq-3.3.1/dt-1.10.18/datatables.min.js"></script>
-
+<?php include "res/views/password.view.php"; ?>
 <!-- REQUIRED SCRIPTS -->
 <!-- jQuery -->
 <script src="res/plugins/jquery/jquery.min.js"></script>

@@ -14,6 +14,7 @@ if ($admin['tipo_usuario'] == 'administrador') {
     $nombre = $admin['usuario'];
     require 'res/views/header.view.php';
     require 'res/views/referentes.view.php';
+
     require 'res/views/footer.view.php';
 }else if ($admin['tipo_usuario'] == 'usuario') {
     $title = "Usuario";
@@ -25,6 +26,7 @@ if ($admin['tipo_usuario'] == 'administrador') {
         padre.removeChild(imagen);
 </script>';
     require 'res/views/referentes.view.php';
+
     require 'res/views/footer.view.php';
 }
 

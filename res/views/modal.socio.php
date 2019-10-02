@@ -92,12 +92,22 @@
         </select> 
 
         </div>  
+        <div class="form-group">
         <label for="socio_fundador">Socio Fundador</label> 
         <select name="socio_fundador" class="form-control">
         <option selected disabled>Seleccionar uno</option>
         <option value="Si">Si</option>
         <option value="No">No</option>
         </select>
+        </div>
+        <div class="form-group">
+        <label for="socio_fundador">Referente</label> 
+        <select name="referente" class="form-control">
+        <option selected disabled>Seleccionar uno</option>
+        <option value="Si">Si</option>
+        <option value="No">No</option>
+        </select>
+        </div>
       </div>
       <div class="modal-footer">
       <button type="submit" class="btn btn-primary">Registrar</button>
