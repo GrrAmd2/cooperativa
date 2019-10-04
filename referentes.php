@@ -11,6 +11,7 @@ $admin = iniciarSession('usuarios', $conexion);
 
 if ($admin['tipo_usuario'] == 'administrador') {
     $title="Administrador";
+    $id = $admin['id'];
     $nombre = $admin['usuario'];
     require 'res/views/header.view.php';
     require 'res/views/referentes.view.php';
@@ -18,6 +19,7 @@ if ($admin['tipo_usuario'] == 'administrador') {
     require 'res/views/footer.view.php';
 }else if ($admin['tipo_usuario'] == 'usuario') {
     $title = "Usuario";
+    $id = $admin['id'];
     $nombre = $admin['usuario'];
     require 'res/views/header.view.php';
     echo '<script>

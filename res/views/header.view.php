@@ -39,8 +39,8 @@
               </a>
               <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                 <div class="dropdown-divider"></div>
-                <a href="" class="dropdown-item" id="ocultar">
-                    <i class="fas fa-user-plus mr-2"></i> Añadir usuario
+                <a href="#" class="dropdown-item" id="ocultar" data-toggle="modal" data-target="#usuarioModal">
+                <i class="fas fa-user-plus mr-2"></i> Añadir usuario
                 </a>
                 <div class="dropdown-divider" id="ocultar"></div>
                 <a href="#" class="dropdown-item" id="ocultar" data-toggle="modal" data-target="#passwordModal">
@@ -85,9 +85,17 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview">
             <a href="referentes.php" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
+              <i class="nav-icon far fa-clock"></i>
               <p>
-                Horarios
+                Fichaje
+              </p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="info_fichajes.php" class="nav-link">
+            <i class="nav-icon fas fa-table"></i>
+              <p>
+                Informacion fichaje
               </p>
             </a>
           </li>

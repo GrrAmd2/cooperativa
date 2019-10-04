@@ -1,4 +1,4 @@
-<div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="usuarioModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -8,7 +8,12 @@
         </button>
       </div>
       <div class="modal-body">
-      <form action="res/admin/cambiar_contraseña.php" method="post">
+      <form action="res/admin/añadir_usuario.php" method="post">
+
+
+        <label for="usuario">Nombre de Usuario</label>
+        <input type="text"
+          class="form-control" name="usuario" id="" aria-describedby="helpId" placeholder="">
 
         <label>Ingrese Contraseña</label>
         <div class="input-group">
@@ -23,9 +28,14 @@
         class="form-control" name="id" id="" aria-describedby="helpId" placeholder="" value="<?= $id?>">
       <small id="helpId" class="form-text text-muted">Help text</small>
     </div>
-      </div>
+    <label for="rol">Tipo de usuario</label>
+    <select class="form-control" name="rol" id="tipo_usuario">
+    <option value="administrador">Administrador</option>
+    <option value="usuario">Usuario</option>
+  </select>
+  </div>  
       <div class="modal-footer">
-        <button type="submit" class="btn btn-success">Actualizar</button></form>
+        <button type="submit" class="btn btn-success">Registrar</button></form>
       </div>
     </div>
   </div>

@@ -11,7 +11,7 @@ $user = iniciarSession('usuarios', $conexion);
 
 
 if ($user['tipo_usuario'] == 'usuario') {
-    $title = "Usuario";
+    $title = "Usuario"; 
     $nombre = $user['usuario'];
     require 'res/views/header.view.php';
     echo '<script>
