@@ -7,6 +7,7 @@
   <thead class="thead-light">
     <tr>
       <th scope="col">DNI</th>
+      <th scope="col">NOMBRE Y APELLIDO</th>
       <th scope="col">HORA</th>
       <th scope="col">FECHA</th>
       <th scope="col">TIPO</th>
@@ -22,7 +23,9 @@
       while($row = $result->fetch_assoc()){
           echo "<tr>";
           echo "<td>".$row['cedula']."</td>";
-          echo "<td>".$row['fecha_hora']."</td>";
+        
+          echo "<td>".$row['nombre_apellido']."</td>";
+          echo "<td>".substr($row['fecha_hora'], 11)."</td>";
           echo "<td>".$row['tipo']."</td>";
           echo "<td>".$row['fecha']."</td>";
           echo "</tr>";
