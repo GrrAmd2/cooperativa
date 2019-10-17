@@ -18,10 +18,15 @@
 
       <?php
       require "res/admin/conexion.php";
-      $sql2 = "SELECT * FROM marcados";
+      $sql2 = "SELECT * FROM marcados ORDER BY id DESC";
       $result = mysqli_query($conexion, $sql2);
       while($row = $result->fetch_assoc()){
-          echo "<tr>";
+        if($row['tipo']=="Entrada"){
+          $color = "table-success";
+        }elseif($row['tipo'] == "Salida"){
+          $color ="table-danger";
+        }
+          echo "<tr class= '$color'>";
           echo "<td>".$row['cedula']."</td>";
         
           echo "<td>".$row['nombre_apellido']."</td>";
